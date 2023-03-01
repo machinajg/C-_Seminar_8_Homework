@@ -6,7 +6,7 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-void FillArray(int[,,] coll)     //Заполняем массив случайными цифрами
+void FillArray(int[,,] coll) 
 {int m = 10;
     for (int i = 0; i < coll.GetLength(0); i++)
     {
@@ -19,7 +19,7 @@ void FillArray(int[,,] coll)     //Заполняем массив случай�
         }
     }
 }
-void PrintArray(int[,,] collection)              //Выводим массив на экран
+void PrintArray(int[,,] collection)              
 {
     for (int i = 0; i < collection.GetLength(0); i++)
     {

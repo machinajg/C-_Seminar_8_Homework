@@ -31,22 +31,18 @@ void PrintArray(int[,] printnumb)              //Выводим массив н�
 }
 int[] GetRowSum(int[,] num)                //Суммируем элементы каждой строки
 {                                           //и кладем их значения в одномерный массив
-    string result = string.Empty;
     int[] res = new int[num.GetLength(0)];
 
     for (int i = 0; i < num.GetLength(0); i++)
     {
         int rowsum = 0;
-
         for (int j = 0; j < num.GetLength(1); j++)
         {
             rowsum += num[i, j];
             res[i] = rowsum;
         }
-        
-    Console.WriteLine($"{res[i]}  ");
+        Console.Write($"{res[i]}  ");
     }
-    
     return res;
 }
 void SelectionSort(int[] array)
@@ -65,6 +61,7 @@ FillArray(array);
 PrintArray(array);
 Console.WriteLine();
 GetRowSum(array);
+Console.WriteLine();
 SelectionSort(GetRowSum(array));
 Console.WriteLine();
 
